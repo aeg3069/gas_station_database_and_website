@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title>Foil Company</title>
+    <link href="/StyleSheet.css" rel="stylesheet" />
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <script type:"text/javascript">
+        $("document").ready(function () {
+
+            $("header nav ul li.Employee_wrap").mouseover(function () {
+                $("header nav ul li.Employee_wrap .Employee").css("display","block")
+            })
+            $("header nav ul li.Employee_wrap").mouseleave(function () {
+                $("header nav ul li.Employee_wrap .Employee").css("display","none")
+            })
+              $("header nav ul li.Vehicle_wrap").mouseover(function () {
+                $("header nav ul li.Vehicle_wrap .Vehicle").css("display","block")
+            })
+            $("header nav ul li.Vehicle_wrap").mouseleave(function () {
+                $("header nav ul li.Vehicle_wrap .Vehicle").css("display","none")
+            })
+                $("header nav ul li.Transportation_Tank_wrap").mouseover(function () {
+                $("header nav ul li.Transportation_Tank_wrap .Transportation_Tank").css("display","block")
+            })
+            $("header nav ul li.Transportation_Tank_wrap").mouseleave(function () {
+                $("header nav ul li.Transportation_Tank_wrap .Transportation_Tank").css("display","none")
+            })
+         
+        })
+
+    </script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+        <div id ="wrapper">
+            <header>
+                <div class="logo">
+                   
+                    </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                           <a href="Default.aspx" >Foil Card</a>
+                           
+                        </li>
+                          <li>
+                                    <a href="gas-prices.aspx" >Gas Prices</a>
+                            
+                        </li>
+                          
+                          <li>
+                                    <a href="supervisors.aspx" >Supervisors</a>
+                            
+                        </li>
+                        <li class="Employee_wrap">
+                                  <a href="#" >Supplier</a>
+                            <div class="Employee">
+                                <ul>
+
+                                    <li>
+                                         <a href="supplier-insert.aspx" >  Insert</a> 
+                                    </li>
+                                    <li>
+                                         <a href="supplier-delete.aspx" >  Delete</a> 
+                                    </li>
+                                    <li>
+                                         <a href="supplier-show.aspx" >  Show</a> 
+                                    </li>
+                                 </ul>
+                            </div>
+
+                        </li>
+                    <li class="Vehicle_wrap">
+                                  <a href="#" >Vehicle</a>
+                            <div class="Vehicle">
+                                <ul>
+
+                                    <li>
+                                         <a href="vehicle-insert.aspx" >  Insert</a> 
+                                    </li>
+                                    <li>
+                                         <a href="vehicle-delete.aspx" >  Delete</a> 
+                                    </li>
+                                    <li>
+                                         <a href="vehicle-show.aspx" >  Show</a> 
+                                    </li>
+                                    </ul>
+                            </div>
+
+                        </li>
+                          <li class="Transportation_Tank_wrap">
+                                  <a href="#" >Transportation Tank</a>
+                            <div class="Transportation_Tank">
+                                <ul>
+
+                                    <li>
+                                       <a href="transportation-tank-insert.aspx" >  Insert</a> 
+                                    </li>
+                                    <li>
+                                         <a href="transportation-tank-delete.aspx" >  Delete</a> 
+                                    </li>
+                                    <li>
+                                        <a href="transportation-tank-show.aspx" >  Show</a> 
+                                    </li>
+                                    </ul>
+                            </div>
+
+                        </li>  
+                        <li>
+                                  <a href="Contact.aspx" >  Contact</a>
+                          
+                        </li>
+                          <li>
+                                    <a href="about.aspx" >About</a>
+                            
+                        </li>
+
+
+                        </ul>
+                    </nav>
+                
+
+                  </header>
+
+            <div class = "banner" >
+                
+
+
+            </div>
+
+              <div class ="left-side">
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+                      
+
+              </div> 
+
+            <div class ="right-side">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+              </div>
+
+
+
+        </div>
+
+        
+    
+    </form>
+</body>
+</html>

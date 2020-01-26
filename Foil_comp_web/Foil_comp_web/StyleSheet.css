@@ -1,0 +1,197 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a:hover{
+    text-decoration:none;
+    color:#ffffff;
+
+}
+
+#wrapper {
+    width: 960px;
+    height: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: 150px;
+    background-color:#b6ff00;
+}
+
+    header .logo {
+        float: left;
+        width: 100px;
+        height: 59px;
+        border-right: 1px solid #ff0000;
+        text-align: center;
+        color: aliceblue;
+        background-color: #ffffff;
+        background-image: url('/foil logo.jpeg');
+    }
+
+    header nav {
+        float: left;
+        width: 700px;
+        height: 50px;
+        background-color: #b6ff00;
+        line-height: 60px;
+    }
+
+        header nav ul {
+        list-style: none;
+
+        }
+            header nav ul li{
+              float:left;
+              
+              color:#000000;
+    width: 150px;
+}
+                header nav ul li.Employee_wrap{
+                    position:relative;
+                }
+
+                    header nav ul li.Employee_wrap .Employee {
+                        display: none;
+                        position: absolute;
+                        width: 70px;
+                        height: auto;
+                        background-color: #b6ff00;
+                    }
+                header nav ul li.Vehicle_wrap {
+                    position: relative;
+                }
+
+                    header nav ul li.Vehicle_wrap .Vehicle {
+                        display: none;
+                        position: absolute;
+                        width: 70px;
+                        height: auto;
+                        background-color: #b6ff00;
+                    }
+                header nav ul li.Transportation_Tank_wrap {
+                    position: relative;
+                }
+
+                    header nav ul li.Transportation_Tank_wrap .Transportation_Tank {
+                        display: none;
+                        position: absolute;
+                        width: 70px;
+                        height: auto;
+                        background-color: #b6ff00;
+                    }
+
+
+
+
+    header .search-wrapper {
+        float: left;
+        text-align: center;
+        line-height: 45px;
+        width: 70px;
+        height: 50px;
+        background-color: #b6ff00;
+    }
+
+        header .search-wrapper .search_txt {
+            float: left;
+            width: 170px;
+            height: 50px;
+            background-color: #b6ff00;
+        }
+.banner {
+    float: left;
+    width: 624px;
+    margin-top: 45px;
+    height: 444px;
+    background-color: #b6ff00;
+    background-image: url('/foil2.jpeg');
+}
+
+.left-side {
+    float: left;
+    width: 285px;
+    margin-top: 45px;
+    height: 500px;
+    background-color: #b6ff00;
+}
+
+    .left-side .sign-in {
+        float: left;
+        width: 285px;
+        height: 359px;
+        background-color: #b6ff00;
+    }
+        .left-side .sign-in .sign_text {
+           
+            float: left;
+            width: 285;
+            margin-left: 15px;
+            border-bottom: 1px solid #000000;
+        }
+        .left-side .sign-in .sign_in_info {
+          float:left;
+          margin:auto;
+          width: 200px;
+          padding: 15px;
+          height: 220px;
+            
+        }
+        .left-side .sign-in .buttons {
+            float: left;
+            width: 250px;
+            padding: 15px;
+            height: 220px;
+        }
+            .left-side .sign-in .buttons .sign_in_button {
+                float: left;
+                width: 90px;
+                padding: 15px;
+                height: 40px;
+            }
+
+            .left-side .sign-in .buttons .register_button {
+                float: right;
+                width: 90px;
+                padding: 15px;
+                height: 40px;
+            }
+
+            .left-side .sign-in .buttons .sign_out_button {
+                float: right;
+                width: 90px;
+                padding: 15px;
+                height: 40px;
+            }
+
+        .left-side .sign-in .sign_in_info .textbox {
+            width: 250px;
+            height: 38px;
+            border: 1px solid #b6ff00;
+        }
+        .left-side .sign-in .sign_in_info .dropdownlist {
+            width: 250px;
+            height: 38px;
+          
+        }
+        .left-side .sign-in .sign_in_info .checkbxlist {
+            width: 250px;
+            height: 38px;
+            border: 1px solid #b6ff00;
+        }
+
+.right-side {
+    float:right;
+    width: 1000px;
+    margin-top: 45px;
+    height: 900px;
+    background-color: #b6ff00;
+}
